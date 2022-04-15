@@ -1,7 +1,7 @@
 import 'package:catalog_app/routes/home_page.dart';
 import 'package:catalog_app/routes/login_page.dart';
 import 'package:catalog_app/utils/key_constant.dart';
-import 'package:catalog_app/utils/themes.dart';
+import 'package:catalog_app/widget/themes.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
