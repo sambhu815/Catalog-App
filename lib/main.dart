@@ -1,3 +1,4 @@
+import 'package:catalog_app/routes/home_detail_page.dart';
 import 'package:catalog_app/routes/home_page.dart';
 import 'package:catalog_app/routes/login_page.dart';
 import 'package:catalog_app/utils/key_constant.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: homePage,
       routes: {
         "/": (context) => const LoginPage(),
-        homePage: (context) => const HomePage()
+        homePage: (context) => const HomePage(),
       },
     );
   }

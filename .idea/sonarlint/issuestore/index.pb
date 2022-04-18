@@ -78,7 +78,9 @@ x
 Handroid/app/src/main/kotlin/com/coolandrodev/catalog_app/MainActivity.kt,4\c\4c2417b8a70e971b29e65c67b8dc2b6cfa5c3d27
 D
 android/build.gradle,1\3\13f012f60e18f38225ce59137db2e07d5d70b29c
-K
-lib/utils/key_constant.dart,7\5\753efdb8689c164157dbf23ac1a04b4139c078f9
 J
 lib/routes/login_page.dart,c\8\c8bbcdb4815e9dec3f2422f27231be054ab86bf5
+I
+lib/widget/my_drawer.dart,4\9\490fe6ed12801c43b40abf16a32fec42c8bd4cff
+S
+#.idea/libraries/Flutter_Plugins.xml,e\8\e8bbc0fdfcefee9aa7b463c83a8a480b92333860
