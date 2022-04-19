@@ -11,25 +11,11 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      backgroundColor: MyTheme.creamColor,
-      bottomNavigationBar: Container(
-        color: Colors.white,
-        child: ButtonBar(
-          alignment: MainAxisAlignment.spaceBetween,
-          buttonPadding: EdgeInsets.zero,
-          children: [
-            "\$${catalog.price}".text.red800.bold.xl4.make(),
-            ElevatedButton(
-                onPressed: () {},
-                style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(MyTheme.darkBluishColor),
-                    shape: MaterialStateProperty.all(const StadiumBorder())),
-                child: "Buy".text.make()).wh(100, 50)
-          ],
-        ).p32(),
+      appBar: AppBar(
+        backgroundColor: MyTheme.creamColor,
+        elevation: 0,
       ),
+      backgroundColor: MyTheme.creamColor,
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -57,6 +43,25 @@ class HomeDetailPage extends StatelessWidget {
             ))
           ],
         ).py16(),
+      ),
+      bottomNavigationBar: Container(
+        color: Colors.white,
+        child: ButtonBar(
+          alignment: MainAxisAlignment.spaceBetween,
+          buttonPadding: EdgeInsets.zero,
+          children: [
+            "\$${catalog.price}".text.red800.bold.xl4.make(),
+            ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                    backgroundColor:
+                    MaterialStateProperty.all(MyTheme.darkBluishColor),
+                    shape:
+                    MaterialStateProperty.all(const StadiumBorder())),
+                child: "Add to Cart".text.make())
+                .wh(120, 50)
+          ],
+        ).p32(),
       ),
     );
   }

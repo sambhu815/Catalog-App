@@ -84,3 +84,15 @@ I
 lib/widget/my_drawer.dart,4\9\490fe6ed12801c43b40abf16a32fec42c8bd4cff
 S
 #.idea/libraries/Flutter_Plugins.xml,e\8\e8bbc0fdfcefee9aa7b463c83a8a480b92333860
+I
+assets/files/catalog.json,7\8\78e30d45db035b631f8d656230944485a15b0086
+K
+lib/widget/item_widget.dart,4\0\406fb567454faca5e4f8af36c6f9cd093eddf439
+Z
+*lib/widget/home_widgets/catalog_image.dart,6\7\672fb4ab9a5c88e59ef65d04fd0618ac3b86f55e
+<
+pubspec.lock,c\1\c1c78778a0cef1e5344166792d1d823fdcb8b109
+Q
+!.idea/libraries/Dart_Packages.xml,f\c\fc67c2d2441e33af1dbd1e910281523d1ce74b4a
+<
+pubspec.yaml,e\8\e8e045469170189f1d6ef12576bd01af132b1018
