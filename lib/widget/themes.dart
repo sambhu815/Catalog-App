@@ -26,6 +26,7 @@ class MyTheme {
           appBarTheme: const AppBarTheme(
               color: Colors.black,
               iconTheme: IconThemeData(color: Colors.white),
+
               titleTextStyle: TextStyle(color: Colors.white))
       );
 
