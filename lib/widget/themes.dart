@@ -8,6 +8,7 @@ class MyTheme {
       fontFamily: GoogleFonts.poppins().fontFamily,
       cardColor: Colors.white,
       canvasColor: creamColor,
+      accentColor: Colors.deepPurple,
       buttonColor: darkBluishColor,
       appBarTheme: const AppBarTheme(
           color: Colors.white,
@@ -16,14 +17,16 @@ class MyTheme {
 
   static ThemeData darkTheme(BuildContext context) =>
       ThemeData(
+        brightness: Brightness.dark,
           fontFamily: GoogleFonts.poppins().fontFamily,
           cardColor: Colors.black,
           canvasColor: creamDarkColor,
           buttonColor: lightBluishColor,
+          accentColor: Colors.white,
           appBarTheme: const AppBarTheme(
               color: Colors.black,
-              iconTheme: IconThemeData(color: Colors.black),
-              titleTextStyle: TextStyle(color: Colors.black))
+              iconTheme: IconThemeData(color: Colors.white),
+              titleTextStyle: TextStyle(color: Colors.white))
       );
 
   //colors

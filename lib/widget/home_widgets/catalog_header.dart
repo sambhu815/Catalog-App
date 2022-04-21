@@ -8,7 +8,7 @@ class CatalodHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Catalog App".text.bold.color(MyTheme.darkBluishColor).size(32).make(),
+        "Catalog App".text.bold.color(context.theme.accentColor).size(32).make(),
         "Trending products".text.size(18).make()
       ],
     );

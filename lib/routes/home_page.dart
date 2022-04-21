@@ -4,7 +4,6 @@ import 'package:catalog_app/models/catalog.dart';
 import 'package:catalog_app/utils/key_constant.dart';
 import 'package:catalog_app/widget/home_widgets/catalog_header.dart';
 import 'package:catalog_app/widget/home_widgets/catalog_list.dart';
-import 'package:catalog_app/widget/themes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -45,20 +44,20 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, cartPage);
           },
           backgroundColor: context.theme.buttonColor,
-          child: const Icon(CupertinoIcons.cart),
+          child: const Icon(CupertinoIcons.cart,color: Colors.white,),
         ),
         body: SafeArea(
           child: Container(
-            padding: Vx.m32,
+            padding: Vx.m16,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 CatalodHeader(),
                 if (CatalogModel.items != null &&
                     CatalogModel.items!.isNotEmpty)
-                  CatalogList().py16().expand()
+                  const CatalogList().py16().expand()
                 else
-                  CircularProgressIndicator().centered().expand()
+                  const CircularProgressIndicator().centered().expand()
               ],
             ),
           ),
