@@ -19,7 +19,8 @@ class _LoginPageState extends State<LoginPage> {
         checkSize = true;
       });
       await Future.delayed(const Duration(seconds: 1));
-      Navigator.pushNamed(context, homePage);
+      await context.vxNav.push(Uri.parse(homePage));
+     // Navigator.pushNamed(context, homePage);
       setState(() {
         checkSize = false;
       });

@@ -54,7 +54,8 @@ class _HomePageState extends State<HomePage> {
           builder: (BuildContext context, store, VxStatus? status) {
             return FloatingActionButton(
               onPressed: () {
-                Navigator.pushNamed(context, cartPage);
+                context.vxNav.push(Uri.parse(cartPage));
+                //Navigator.pushNamed(context, cartPage);
               },
               backgroundColor: context.theme.buttonColor,
               child: const Icon(
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 CatalodHeader(),
-                if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+                if (CatalogModel.items.isNotEmpty)
                   const CatalogList().py16().expand()
                 else
                   const CircularProgressIndicator().centered().expand()
